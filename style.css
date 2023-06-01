@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+/*clear the flow*/
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*this 12 column grid comes from W3C https://www.w3schools.com/css/css_rwd_grid.asp */
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*main style*/
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+h1 {
+    color: #343434;
+    text-align: center;
+}
+
+h1,
+    h2{
+        font-family: Georgia;
+        padding: 20px;
+    }   
+
+p {
+    font-family: Verdana;
+    padding: 10px;
+}
+
+.title {
+    color: #6f6f6f;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.images {
+    max-width:100%;
+    height:auto;
+}
+
+/*Navigation menu*/
+    
+nav {
+    background-image: 
+    url('background-static.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+/*.banner li {
+    font-family: Verdana;
+    font-size: 14px;
+    background-color: lightgray;
+    padding: 13px;
+    border-radius: 14px;
+    display: inline-block;
+    margin: 7px;
+}*/
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+/*these only style a section on the homepage 
+
+.current-reading {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5% 10%;
+    text-align: center;
+    display: inline-block;
+}
+
+.current-reading p{
+    text-align: left;
+    position: inherit;
+    border: 3px solid lightcoral;
+    border-radius: 15px;
+}
+
+*/
+
