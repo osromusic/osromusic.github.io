@@ -1,51 +1,128 @@
 <!DOCTYPE html>
-<!--this site is a professional portfolio for Travis Basso and a final project for LIS488, Simmons University-->
-<html lang="en-US">
+<html lang="en">
 <head>
-    <title>Travis Basso: Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='./style.css' rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="author" content="Travis Basso">
-    <meta name="description" content="This website is the professional portfolio of Travis Basso. It contains a detailed work history and examples of projects and resources including information literacy tools and handouts.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta property="og:description" content="Travis Basso is an artist, archivist, and educator with over 13 years experience in higher education. His work includes digital art and video, experimental sound design, information literacy, and research.">
-    <meta property="og:title" content="Travis Basso: Portfolio">
+<title>Travis Basso Portfolio</title>
+<meta charset="UTF-8">
+<meta lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main-style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<meta name="author" content="Travis Basso">
+<meta name="description" content="This website is the professional portfolio of Travis Basso. It contains a detailed work history and examples of projects and resources including information literacy tools and handouts.">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:description" content="Travis Basso is an artist, archivist, and educator with over 13 years experience in higher education. His work includes digital art and video, experimental sound design, information literacy, and research.">
+<meta property="og:title" content="Travis Basso: Portfolio">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<script type="text/javascript">
+onload = function(){
+	document.getElementById("lastModified").innerHTML = "Page last changed " + document.lastModified.split(" ")[0];
+}
+</script>
 </head>
-<body>
-    <nav class="banner row">
-        <div class="col-3 menu">
-        <ul>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="archival work.html">Archival Work</a></li>
-        <li><a href="info-lit.html">Information Literacy</a></li>
-        <li><a href="sluberski.html">Sluberski Film Series</a></li>
-        <li><a href="art.html">Art</a></li>
-        <li><a href="writings.html">Writings</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="contact.html">Contact</a></li>   
-        </ul>
-        </div>
-    </nav>
-    <hr>
-   <section class="row col-3">
-        <h1 class="title uppercase">Welcome!</h1>
-        <p>Welcome to my professional portfolio site. I coded this site from scratch with help from W3schools, Codeacademy, and Mozilla resources. Please explore the various pages to see my resume and examples of my work including information literacy handouts and videos, history presentations, writings, and annotated lists of tools. Feel free to send me an email to collaborate!</p>
-    </section>
-    <section class="row col-6 current-reading">
-        <img class="col-6 images" src="trip_9.jpg" alt="painting on three panels in red blue and tan">
-        <div class="col-3">
-            <h2>Currently Reading</h2>
-            <p>Check out the latest book on my reading list. I have a wide range of tastes in books but I tend towards science fiction, non-fiction books on music and art, and philosophical readings.</p>
-        </div>
-        <div class="col-3">
-            <h2>Currently Reading</h2>
-            <p>Check out the latest book</p>
-        </div>
-        <div class="col-3">
-            <h2>Currently Reading</h2>
-            <p>Check out the latest book</p>
-        </div>
-    </section>
+
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="basso_vest_headshot.jpg" style="width:50%" alt="basso in vest headshot">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-pencil w3-xxlarge"></i>
+    <p>RESUME</p>
+  </a>
+  <a href="work.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>WORK</p>
+  </a>
+  <a href="art.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>ART</p>
+  </a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+    <a href="resume.html" class="w3-bar-item w3-button" style="width:20% !important">RESUME</a>
+    <a href="work.html" class="w3-bar-item w3-button" style="width:20% !important">WORK</a>
+    <a href="art.html" class="w3-bar-item w3-button" style="width:20% !important">ART</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Travis Basso</span></h1>
+    <p>Artist, Archivist, and Librarian.</p>
+    <img src="basso_vest_headshot.jpg" alt="basso vest headshot" class="w3-image" width="25%" height="25%">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Basso</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am an artist whose preferred medium is time. When I make art and music I am exploring the past in hopes of imagining a better future, and I see my professional work in the Archives in the same light. I am currently pursuing an advanced degree in Archives to reclaim lost voices and expose hidden truths buried within records forgotten and ignored.
+    </p>
+    <br>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">13+</span><br>
+        Years of Experience
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100+</span><br>
+        Original Artworks
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">7+</span><br>
+        Original Video Works
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100+</span><br>
+        Beats
+      </div>
+    </div>
+    
+    </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="http://twitter.com/mosscove" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/travis-basso-2021/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Modified from the Dark Portfolio template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p class="w3-medium">Copyright 2021 Travis Basso</p>
+    <span class="w3-small" id="lastModified"></span>
+  <!--template https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm -->
+ 
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
